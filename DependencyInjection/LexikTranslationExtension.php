@@ -140,7 +140,7 @@ class LexikTranslationExtension extends Extension implements PrependExtensionInt
             return;
         }
 
-        $rootDir = '%kernel.project_dir%/vendor/lexik/translation-bundle/Resources/views';
+        $rootDir = '%kernel.project_dir%/vendor/alessandrolandim/translation-bundle/Resources/views';
 
         $container->prependExtensionConfig('twig', [
             'paths' => [

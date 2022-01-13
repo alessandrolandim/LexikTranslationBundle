@@ -331,8 +331,8 @@ class ImportTranslationsCommand extends Command
      */
     protected function getFileNamePattern(array $locales, array $domains)
     {
-        $formats = $this->translator->getFormats();
-
+        //$formats = $this->translator->getFormats();
+        $formats = [];
         if (count($domains)) {
             $regex = sprintf('/((%s)\.(%s)\.(%s))/', implode('|', $domains), implode('|', $locales), implode('|', $formats));
         } else {
